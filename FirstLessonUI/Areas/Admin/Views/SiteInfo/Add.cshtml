@@ -1,0 +1,79 @@
+﻿@model SiteInfo
+
+
+@{
+    ViewData["Title"] = "Site Info / Info Add";
+
+}
+@section addcss{
+    <style>
+        label {
+            border-color: transparent !important;
+            color: black !important;
+            background-color: transparent !important;
+        }
+    </style>
+ }
+
+<div class="container p-5">
+    <h2 class="text-dark">Create Info</h2>
+
+
+    <div class="form-group">
+        <form method="post" asp-action="Add" enctype="multipart/form-data">
+            @if (!string.IsNullOrWhiteSpace(ViewBag.err))
+            {
+                <div class="col-md-12 form-control bg-transparent border-0">@ViewBag.err</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(ViewBag.logos))
+            {
+                <div class="col-md-12 form-control bg-transparent border-0">@ViewBag.logos</div>
+            }
+
+                        @if (!string.IsNullOrWhiteSpace(ViewBag.icon))
+            {
+                <div class="col-md-12 form-control bg-transparent border-0">@ViewBag.icon</div>
+            }
+            <div class="col-md-12 form-control bg-transparent border-0" asp-validation-summary="All"></div>
+
+             <div class="form-group">
+                <label class="form-control">Logo</label>
+                <input required type="file" name="logosss" class="form-control text-dark" />
+       
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Favicon</label>
+                <input required type="file" name="iconnnnn" class="form-control text-dark" />
+               
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-control">Name</label>
+                <input required asp-for="Name" class="form-control text-dark" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+          <div class="form-group">
+                <label class="form-control">Number</label>
+                <input required asp-for="Number" class="form-control text-dark" />
+                <span asp-validation-for="Number" class="text-danger"></span>
+            </div>
+
+          <div class="form-group">
+                <label class="form-control">Address</label>
+                <input required asp-for="Address" class="form-control text-dark" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+
+            <div class="d-flex my-5">
+                <input class="btn btn-primary" type="submit" value="Add" />
+                <a asp-action="index" class="btn btn-success">Back</a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,59 @@
+﻿@model SiteInfo
+<footer class="container mt-10">
+    <div class="slogan-footer">
+        <h1 class="slogan">#PUSHYOURLIMITS</h1>
+    </div>
+    <div class="subscribe-socials mt-5">
+
+        <div class="subscribe">
+            <form action="#">
+                <input type="email" placeholder="Email">
+                <button type="submit">OK</button>
+            </form>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="#">instagram</a></li>
+                <li><a href="#">whatsapp</a></li>
+                <li><a href="#">telegram</a></li>
+                <li><a href="#">linkedin</a></li>
+                <li><a href="#">facebook</a></li>
+                <li><a href="#">youtube</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="menu-footer">
+            <div class="contact">
+                <ul>
+                    <li><a href="tel:@Model.Number">@Model.Number</a></li>
+                    <li><a href="#">@Model.Address</a></li>
+       
+                </ul>
+            </div>
+            <div class="about-us">
+                <ul>
+                    <li><a href="#">Who are we?</a></li>
+                    <li><a href="#">What do we do?</a></li>
+                </ul>
+            </div>
+
+            <div class="about-us">
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Download </a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="for-footer-logo">
+            <div class="logo">
+                <img src="~/assetss/img/@Model.Logo" alt="logo">
+            </div>
+        </div>
+
+        <div class="copyright mt-5">
+            <span>@@2023 Push30 - All rights reserved           </span>
+        </div>
+    </div>
+</footer>

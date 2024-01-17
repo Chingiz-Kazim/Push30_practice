@@ -1,0 +1,47 @@
+﻿@model IEnumerable<FirstLessonUI.Models.Entity.Region>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-xl-12 col-sm-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Region Info</h4>
+            <p class="card-description">
+                Add Region <code> <a class="btn btn-primary" asp-action="Add">Create Region</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                      
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>@item.Name</td>
+                                <td>@item.City.Name</td>
+                                <td>
+                                    <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

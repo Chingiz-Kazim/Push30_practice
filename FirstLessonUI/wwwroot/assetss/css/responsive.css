@@ -1,0 +1,731 @@
+@media screen and (min-width: 950px){
+    .cart-bottom  .owl-carousel{
+        opacity: 0;
+    }
+
+
+  }
+/* slogan responsive section start */
+@media screen and (min-width: 2000px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 11rem;
+    }
+    .slogan2{
+        font-size: 2.9rem;
+    }
+
+    #fitness .slogan, #discount .slogan{
+        font-size: 3rem;
+    }
+  }
+
+  @media screen and (max-width: 2378px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 10rem;
+    }
+    .slogan2{
+        font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 2167px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 9.5rem;
+    }
+    .slogan2{
+        font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 2055px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 9rem;
+    }
+    .slogan2{
+        font-size: 2.4rem;
+    }
+    #fitness .slogan, #discount .slogan{
+        font-size: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 1954px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 8rem;
+    }
+    .slogan2{
+        font-size: 2.1rem;
+    }
+  }
+
+  @media screen and (max-width: 1730px) {
+
+    .slogan, .slogan-footer .slogan{
+        font-size: 7.5rem;
+    }
+    .slogan2{
+        font-size: 2rem;
+    }
+  }
+
+  @media screen and (max-width: 1623px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 6.5rem;
+    }
+    .slogan2{
+        font-size: 1.7rem;
+    }
+  }
+
+  @media screen and (max-width: 1405px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 6rem;
+    }
+    .slogan2{
+        font-size: 1.6rem;
+    }
+
+  }
+
+  @media screen and (max-width: 1301px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 5.5rem;
+    }
+    .slogan2{
+        font-size: 1.5rem;
+    }
+.author, .shareddate{
+    font-size: 10px !important;
+}
+  }
+
+  @media screen and (max-width: 1211px) {
+    .slogan2{
+        font-size: 1.4rem;
+    }
+
+  }
+
+  @media screen and (max-width: 1189px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 5rem;
+    }
+    .slogan2{
+        font-size: 1.3rem;
+    }
+    nav .menu a{
+        font-size: 11px;
+    }
+
+    .filter-categories ul li{
+        font-size: 2.5rem;
+    }
+
+    .blog-name{
+        font-size: 16px !important;
+    }
+  }
+
+  @media screen and (max-width: 1092px) {
+    nav .menu a{
+        font-size: 9px;
+    }
+
+  }
+
+  @media screen and (max-width: 1083px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 4.5rem;
+    }
+    .slogan2{
+        font-size: 1.2rem;
+    }
+    .filter-categories ul li{
+        font-size: 2rem;
+    }
+
+    .author, .shareddate{
+        font-size: 7px !important;
+    }
+
+    .career-detail.active{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .career-detail.active > div{
+        width: 100%;
+    }
+
+    .career-detail.active > div:nth-child(2){
+margin-top: 5%;
+    }
+  }
+
+  @media screen and (max-width: 977px) {
+    .container{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .slogan, .slogan-footer .slogan{
+        font-size: 4rem;
+    }
+    .slogan2{
+        font-size: 1rem;
+    }
+
+    nav .menu a{
+        font-size: 8px;
+    }
+
+  }
+
+  @media screen and (max-width: 950px) {
+    
+.menu{
+    width: 100%;
+}
+
+
+nav .logo {
+    border-right: none;
+}
+    .mt-10{
+        margin-top: 20%;
+    }
+    .nav{
+        position: relative;
+    }
+
+    .login{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+.menu, .menu-login{
+    display: none !important;
+}
+
+.menu-mobile{
+    display: flex;
+    background-color: transparent !important;
+}
+
+.menu.activ{
+    display: flex !important;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background-color: black;
+    justify-content: start;
+    align-items: start;
+    padding: 20%;
+    animation: scrolll 1s;
+}
+
+
+
+
+@keyframes scrolll {
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+.menu.activ .link{
+    font-size: 1rem;
+    height: 80px;
+}
+
+.menu.activ .link::after, .menu.activ .link::before{
+display: none;
+}
+
+
+.menu-mobile-login{
+    display: flex !important;
+}
+
+.gym-cart{
+    justify-content: space-between;
+}
+
+.gym-cart .cart, .discount-cart .cart{
+    margin-top: 5%;
+}
+
+.gyms .header{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.cart-bottom div p{
+    font-size: 11px;
+}
+
+.gym-cart .cart, .discount-cart .cart {
+    width: 45%;
+}
+
+.blog-carts{
+    justify-content: space-between;
+}
+
+.cart-bottom.flex > div:nth-child(1){
+    display: none !important;
+}
+.blog-cart{
+    width: 45%;
+}
+
+.author, .shareddate{
+    font-size: 10px !important;
+}
+
+.newsletter .subscribe{
+    width: 100%;
+}
+
+.pricingg .item{
+width: 300px;
+}
+#pricing .item .card-header h3{
+    margin: 5% 0;
+    font-size: 1.5rem;
+}
+
+#pricing .item .card-header p{
+    font-size: 0.7rem;
+}
+
+#pricing .item .price span:nth-child(1){
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+#pricing .item .card-footer a{
+    padding: 7% 10%;
+    font-size: 13px;
+}
+
+#pricing .item .card-footer span{
+    margin: 15px;
+    font-size: 10px;
+}
+}
+
+
+
+  @media screen and (max-width: 866px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 3.5rem;
+    }
+    .slogan2{
+        font-size: 0.9rem;
+    }
+
+  }
+
+  @media screen and (max-width: 758px) {
+    .mobile-all{
+        text-decoration: underline;
+    }
+    nav .logo{
+        margin-left: 3%;
+    }
+    .slogan, .slogan-footer .slogan{
+        font-size: 3rem;
+    }
+
+    #discount .slogan, #fitness .slogan{
+        font-size: 2.3rem;
+    }
+    .slogan2{
+        font-size: 0.8rem;
+    }
+    .filter-categories ul li{
+        font-size: 1.5rem;
+    }
+    .mobile-hide{
+        display: none;
+    }
+    .mobile-all{
+        display: flex;
+        justify-content: center;
+        margin: 10% 0%;
+    }
+    footer, .subscribe-socials, .footer-bottom{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+.menu-footer{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.for-footer-logo .logo{
+    position: inherit;
+    top: 0;
+}
+    .subscribe-socials div{
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .subscribe-socials .social ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subscribe-socials ul{
+        padding: 0;
+    }
+    .subscribe-socials ul li:nth-child(1){
+        margin-left: 0;
+    }
+  }
+
+  @media screen and (min-width: 650px){
+    .filter.pc-show{
+        display: flex;
+    }
+    .filter.pc-hide{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 2.5rem;
+    }
+    #discount .slogan, #fitness .slogan{
+        font-size: 2rem;
+    }
+    .slogan2{
+        font-size: 0.65rem;
+    }
+    .gym-cart .cart, .discount-cart .cart {
+        width: 100%;
+    }
+    .howitworks-button a, .howitworks-buttons a{
+        font-size: 14px;
+    }
+    #pricing .item .card-header h3{
+        font-size: 1rem;
+    }
+    .pricingg .item{
+        font-size: 14px;
+    }
+    #pricing .item .price span:nth-child(2){
+        font-size: 2rem;
+    }
+
+    #pricing .item .card-footer a{
+        font-size: 10px;
+    }
+    .social ul li a{
+        font-size: 16px;
+    }
+
+    .pricingg .item{
+        margin: 0;
+    }
+
+    .blog-cart {
+        width: 100%;
+        margin-top: 10%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .blog-history{
+        margin: 2% 0%;
+    }
+
+    .blog-detail .blog-name, .blog-detail .first-description, .blog-social, .blog-history{
+        font-size: 10px !important;
+        margin-top: 10% !important;
+    }
+.careers-name ul li, .careers ul li{
+    width: 45%;
+    font-size: 10px;
+}
+.careers ul li:nth-child(1){
+    width: 82%;
+}
+.careers-name ul li.arrow{
+    width: 4%;
+}
+.career-detail{
+    font-size: 10px;
+}
+
+.filter.pc-show{
+    display: none;
+}
+.filter.pc-hide{
+    display: flex;
+}
+
+.pc-hide .search-input{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.closeactive{
+    margin-top: 6%;
+
+}
+
+.city-contact, .message > div > form{
+    flex-direction: column;
+}
+
+.city-contact, .message > div > form, .city-contact, .message > div > form .w-50, .city-contact, .message > div > form .w-100{
+    width: 100%;
+}
+
+  }
+
+@media screen and (max-width: 620px){
+    .social ul{
+        flex-direction: column;
+    }
+}
+
+  @media screen and (max-width: 566px){
+.menu-footer{
+    flex-direction: column;
+}
+.menu-footer > div:nth-child(2){
+    justify-content: space-between;
+}
+.for-footer-logo{
+    margin: 5%;
+}
+
+.menu-footer ul{
+    padding: 0;
+}
+  }
+
+  @media screen and (max-width: 543px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 2.2rem;
+    }
+    .slogan2{
+        font-size: 0.58rem;
+    }
+    #discount .slogan, #fitness .slogan{
+        font-size: 1.8rem;
+    }
+
+    .costumer{
+        flex-direction: column;
+    }
+
+    .costumer span, .categories .filter-categories .buttons{
+        display: none;
+    }
+
+    .costumer a{
+        margin-top: 3%;
+        padding: 1.5% 2%;
+        font-size: 0.8rem;
+    }
+
+    .categories{
+        flex-direction: column;
+    }
+    .categories > div{
+        width: 100%;
+    }
+
+    .categories .filter-categories  .filter-categories-ul{
+        display: flex;
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .categories .filter-categories  .filter-categories-ul li{
+        font-size: 0.6rem;
+        margin:0% 1%;
+    }
+  }
+
+  @media screen and (max-width: 477px) {
+
+    #home{
+        margin-top: 10%;
+    }
+    .slogan, .slogan-footer .slogan{
+        font-size: 1.8rem;
+    }
+    .slogan2{
+        font-size: 0.4rem;
+    }
+    .banner{
+        margin-top: 10%;
+    }
+
+
+    .banner-image{
+        height: 30vh;
+    }
+
+    .categories .filter-categories .filter-categories-ul li {
+        font-size: 1.1rem;
+        margin: 0% 3%;
+    }
+
+.gym-cart, .discount-cart{
+    margin-top: 5%;
+}
+
+.gym-cart .cart, .discount-cart .cart{
+    margin-top: 15%;
+}
+
+
+#pricing{
+    padding: 0 2%;
+}
+.gym-cart .cart:nth-child(1), .discount-cart .cart:nth-child(1){
+    margin-top: 0%;
+}
+
+.howitworks-button a, .howitworks-buttons a{
+padding: 3% 10%;
+}
+
+.pricingg .item{
+    margin: 0 3%;
+}
+
+
+#pricing .item p{
+    font-size: 0.8rem;
+    line-height: 20px;
+}
+
+.subscribe-socials, .menu-footer > div{
+    padding: 0 5%;
+}
+
+
+
+.pricingg .item:nth-child(1){
+    margin: 0;
+}
+
+
+#pricing .swiper{
+    margin-top: 15%;
+}
+.mobile-all{
+    font-size: 1rem;
+}
+
+.costumer a{
+    padding: 3.5% 10%;
+}
+
+.costumer a:nth-child(3){
+    margin-top: 15px;
+}
+
+
+    .slogan, .slogan-footer .slogan{
+        font-size: 1.8rem;
+    }
+    .slogan2{
+        font-size: 0.48rem;
+    }
+.social ul{
+    flex-direction: column;
+}
+
+.social ul li{
+    margin: 0;
+    margin-top: 5%;
+}
+
+.map-filter form{
+    margin: 10% 0%;
+}
+
+.map-filter form select, .map-filter form input{
+    background-color: transparent;
+    color: white;
+    border: none;
+    -moz-appearance:auto; /* Firefox */
+    -webkit-appearance:auto; /* Safari and Chrome */
+    appearance: auto;
+    padding: 2% 0%;
+    width: 100%;
+    text-align: start;
+    }
+
+    .map-filter form input{
+        padding: 1%;
+    }
+  }
+
+  @media screen and (max-width: 430px) {
+
+    .menu.activ{
+        padding: 20% 5%;
+    }
+    
+    .menu.activ .link{
+        font-size: 1.3rem;
+    }
+
+    #discount .slogan, #fitness .slogan{
+        font-size: 1.5rem;
+    }
+    .closeactive > i.active{
+        font-size: 14px;
+    }
+    }
+
+  @media screen and (max-width: 389px) {
+
+
+    .banner-image, .banner-image img{
+        height: 50vh;
+    }
+    #discount .slogan, #fitness .slogan{
+        font-size: 1.3rem;
+    }
+    .categories .filter-categories .filter-categories-ul li{
+        font-size: 0.4rem;
+    }
+
+
+  }
+
+  @media screen and (max-width: 325px) {
+    .slogan, .slogan-footer .slogan{
+        font-size: 0.8rem;
+    }
+    .slogan2{
+        font-size: 0.2rem;
+    }
+    #discount .slogan, #fitness .slogan{
+        font-size: 1rem;
+    }
+  }
+
+  /* slogan responsive section start */
+
+

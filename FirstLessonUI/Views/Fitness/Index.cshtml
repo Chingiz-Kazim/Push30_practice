@@ -1,0 +1,7 @@
+﻿@await Component.InvokeAsync("Banner")
+@await Component.InvokeAsync("Filter", new {db = ViewData["db"]})
+@await Component.InvokeAsync("Centers", new {db = ViewData["db"],
+                                        city = ViewBag.City,
+                                        region = ViewBag.Region,
+                                        activity = ViewBag.Activity,
+                                        package = ViewBag.Package})

@@ -1,0 +1,346 @@
+﻿<!doctype html>
+<html lang="en">
+
+
+<!-- Mirrored from themesbrand.com/skote-django/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 16 Dec 2022 09:52:29 GMT -->
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | Skote - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/admin-assets/images/favicon.ico">
+
+    <!-- Bootstrap Css -->
+    <link href="~/admin-assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Icons Css -->
+    <link href="~/admin-assets/css/icons.min.css" rel="stylesheet" />
+    <!-- App Css-->
+    <link href="~/admin-assets/css/app.min.css" rel="stylesheet" />
+    <style>
+        textarea {
+            width: 100%;
+        }
+
+        .pagination li {
+            font-size: 1.3em;
+            margin: 0 5%;
+        }
+    </style>
+    @RenderSection("addcss", required: false)
+</head>
+
+<body data-sidebar="dark" data-layout-mode="light">
+
+    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="~/admin-assets/images/logo.svg" alt="" height="22">
+                            </span>
+                            @*                            <span class="logo-lg">
+                            <img src="~/admin-assets/images/logo-dark.png" alt="" height="17">
+                            </span>*@
+                        </a>
+
+                        <a href="index.html" class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="~/admin-assets/images/logo-light.svg" alt="" height="22">
+                            </span>
+                            @*                     <span class="logo-lg">
+                            <img src="~/admin-assets/images/logo-light.png" alt="" height="19">
+                            </span>*@
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block" asp-controller="product" asp-action="index">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" name="name" placeholder="Search...">
+                            <button style="border: 0; background: transparent;"><span class="bx bx-search-alt"></span></button>
+
+                        </div>
+                    </form>
+
+                    <div class="dropdown dropdown-mega d-none d-lg-block ms-2">
+                    </div>
+                </div>
+
+                <div class="d-flex">
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li>
+                            <a asp-controller="Country" asp-action="index" class="waves-effect">
+                                <span key="t-chat">Countries</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Centers" asp-action="index" class="waves-effect">
+                                <span key="t-chat">Fitness Centers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="DiscountPartner" asp-action="index" class="waves-effect">
+                                <span key="t-chat">Discount Partner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Package" asp-action="index" class="waves-effect">
+                                <span key="t-chat">Packages</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Activity" asp-action="index" class="waves-effect">
+                                <span key="t-chat">Activities</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="Stepandcondition" asp-action="index" class="waves-effect">
+                                <span key="t-chat">Steps</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a asp-controller="siteinfo" asp-action="index" class="waves-effect">
+
+                                <span key="t-chat">Site İnfo</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="Faq" asp-action="index" class="waves-effect">
+
+                                <span key="t-chat">FAQ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="City" asp-action="index" class="waves-effect"><span key="t-chat">City</span></a>
+                        </li>
+                        <li>
+                            <a asp-controller="Region" asp-action="index" class="waves-effect"><span key="t-chat">Region</span></a>
+                        </li>
+                        <li>
+                            <a asp-controller="Industry" asp-action="index" class="waves-effect"><span key="t-chat">Industry</span></a>
+                        </li>
+                        <li>
+                            <a asp-controller="Career" asp-action="index" class="waves-effect">
+
+                                <span key="t-chat">Careers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="blog" asp-action="index" class="waves-effect">
+
+                                <span key="t-chat">Blogs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a asp-controller="SiteCoverImage" asp-action="index" class="waves-effect">
+
+                                <span key="t-chat">Site Cover Image</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        @RenderBody()
+                    </div>
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+    <!-- Right Sidebar -->
+    <div class="right-bar">
+        <div data-simplebar class="h-100">
+            <div class="rightbar-title d-flex align-items-center px-3 py-4">
+
+                <h5 class="m-0 me-2">Settings</h5>
+
+                <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                    <i class="mdi mdi-close noti-icon"></i>
+                </a>
+            </div>
+
+            <!-- Settings -->
+            <hr class="mt-0" />
+            <h6 class="text-center mb-0">Choose Layouts</h6>
+
+            <div class="p-4">
+                <div class="mb-2">
+                    <img src="~/admin-assets/images/layouts/layout-1.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="light-mode-switch" checked>
+                    <label class="form-check-label" for="light-mode-switch">Light Mode</label>
+                </div>
+
+                <div class="mb-2">
+                    <img src="~/admin-assets/images/layouts/layout-2.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-mode-switch">
+                    <label class="form-check-label" for="dark-mode-switch">Dark Mode</label>
+                </div>
+
+                <div class="mb-2">
+                    <img src="~/admin-assets/images/layouts/layout-3.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input theme-choice" type="checkbox" id="rtl-mode-switch">
+                    <label class="form-check-label" for="rtl-mode-switch">RTL Mode</label>
+                </div>
+
+                <div class="mb-2">
+                    <img src="~/admin-assets/images/layouts/layout-4.jpg" class="img-thumbnail" alt="layout images">
+                </div>
+                <div class="form-check form-switch mb-5">
+                    <input class="form-check-input theme-choice" type="checkbox" id="dark-rtl-mode-switch">
+                    <label class="form-check-label" for="dark-rtl-mode-switch">Dark RTL Mode</label>
+                </div>
+
+
+            </div>
+
+        </div> <!-- end slimscroll-menu-->
+    </div>
+    <!-- /Right-bar -->
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="~/admin-assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="~/admin-assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="~/admin-assets/libs/node-waves/waves.min.js"></script>
+
+    <!-- apexcharts -->
+    <script src="~/admin-assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- dashboard init -->
+    <script src="~/admin-assets/js/pages/dashboard.init.js"></script>
+    <script src="~/admin-assets/libs/dropzone/min/dropzone.min.js"></script>
+    <!-- App js -->
+    <script src="~/admin-assets/js/app.js"></script>
+    <script>
+
+        $('.custom-file-input-for-favicon').on('change', function () {
+            var fileName = $(this).val();
+            console.log(fileName);
+            readURLs(this);
+
+
+
+
+        });
+
+
+
+        function readURLs(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+
+                    console.log(e.target.result);
+                    $('#plusIcon').text("");
+                    $('#createdImageForFavicon').css("display", "block");
+
+                    $('#createdImageForFavicon').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+
+
+        $('.custom-file-input-for-logo').on('change', function () {
+            var fileName = $(this).val();
+            console.log(fileName);
+            readURL(this);
+
+
+
+
+        });
+
+
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+
+                    console.log(e.target.result);
+                    $('#plusLogo').text("");
+                    $('#createdImageForLogo').css("display", "block");
+
+                    $('#createdImageForLogo').attr('src', e.target.result);
+                }
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+
+
+
+
+    </script>
+    @RenderSection("addjs", required: false)
+</body>
+
+</html>

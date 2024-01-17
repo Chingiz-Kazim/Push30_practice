@@ -1,0 +1,40 @@
+﻿@model SiteInfo
+<header class="container" id="container">
+    <nav class="d-flex">
+        <div class="logo">
+            <img src="~/assetss/img/@Model.Logo" alt="push30 logo">
+        </div>
+        <div class="menu">
+            <a class="link active" href="#home">HOME</a>
+            <a class="link" href="#activities">ACTIVITIES</a>
+            <a class="link" href="#FitCenters">FITNESS CENTERS</a>
+            <a class="link" href="#discount">DISCOUNT PARTNERS</a>
+            <a class="link" href="#howitworks">HOW IT WORKS </a>
+            <a class="link" href="#pricing">PRICING</a>
+            <a class="link last" href="#">CONTACT</a>
+            <a class="link menu-mobile-login" href="#">LOGIN</a>
+        </div>
+
+        <div class="login">
+            <a class="menu-mobile" href="#">
+
+            </a>
+            <form asp-action="index" class="langandcon">
+                <input id="lang-hid" name="lang" type="hidden" value="@ViewBag.Language" />
+                <input id="con-hid" name="con" type="hidden" value="@ViewBag.Country" />
+            <select class="lang" name="lang">
+             <option value="az">AZ</option>
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+            </select>
+       
+                <select class="con" name="con">
+                    <option value="az">Azerbaijan</option>
+                    <option value="pl">Poland</option>
+                    <option value="global">Global</option>
+                </select>
+            </form>
+            <a class="menu-login" href="#">LOGIN</a>
+        </div>
+    </nav>
+</header>

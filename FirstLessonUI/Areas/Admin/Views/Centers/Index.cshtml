@@ -1,0 +1,77 @@
+﻿@model FitnessActivityViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="col-xl-12 col-sm-12">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Centers</h4>
+            <p class="card-description">
+                Add Centers <code> <a class="btn btn-primary" asp-action="Add">Create Centers</a></code>
+            </p>
+            <div class="table-responsive">
+                <table class="table table-bordered border-primary mb-0">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Images</th>
+                            <th>Description</th>
+                            <th>Note</th>
+                            <th>Price</th>
+                            <th>Activities</th>
+                            <th>Packages</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Centers)
+                        {
+                            <tr>
+
+                                <td>@item.Name</td>
+   
+                                <td>
+                                    @if (item.Images != null)
+                                    {
+                                        <img src="~/assetss/img/@item.Images.FirstOrDefault().Name" width="30" height="30" />
+                                    }
+
+                                </td>
+                                <td>@item.Description</td>
+                                <td>@item.Note</td>
+                                <td>@item.Price</td>
+                                <td>
+                                  @foreach (var itemm in Model.CenterActivity.Where(p=> p.CenterId == item.Id))
+                                    {
+                                        <p style="font-size: 10px;">@itemm.Activity.Name</p>
+
+                                    }
+                                </td>
+
+                                <td>
+                                    @foreach (var itemm in Model.CentersPackages.Where(p => p.CenterId == item.Id))
+                                    {
+                                        <p style="font-size: 10px;">@itemm.Packages.Name</p>
+
+                                    }
+                                </td>
+                                
+                                
+                                <td>
+                                    <a asp-action="Update" asp-route-id="@item.Id" class="btn btn-sm btn-primary"><i class="fa-solid fa-pen"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-warning"><i class="fa-solid fa-trash"></i></a>
+                                </td>
+                            </tr>
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

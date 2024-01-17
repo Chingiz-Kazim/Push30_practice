@@ -1,0 +1,55 @@
+﻿@model FitnessActivityViewModel
+@{
+    var count = 0;
+}
+<section id="fitness" class="gyms mt-10">
+    <div class="header">
+        <h3 class="slogan">FITNESS CENTERS</h3>
+        <a href="#" class="mobile-hide">see all</a>
+    </div>
+
+    <div class="gym-cart">
+        @foreach (var item in Model.Centers)
+        {
+            count = 0;
+            <div class="cart">
+                <div class="cart-top" style="background: url(/assetss/img/image\ 9.png); background-size: cover; background-repeat: no-repeat; ">
+
+                    <div class="distance"><span>1.2 km</span><span>near you</span></div>
+                    <div class="gym-name"><h3>@item.Name</h3></div>
+                </div>
+                <div class="cart-bottom flex">
+
+
+
+                    <div class="owl-carousel owl-theme" style="display: flex !important; justify-content: space-between; opacity: 1 !important;">
+                        @foreach(var itemm in Model.CenterActivity.Where(p=> p.CenterId == item.Id))
+                        {
+                            count++;
+                            @if(count == 1)
+                            {
+                                <div class="item active">
+                                    <p class="packets">@itemm.Activity.Name</p>
+                                </div>
+                            }
+                            else
+                            {
+                                  <div class="item">
+                                    <p class="packets">@itemm.Activity.Name</p>
+                                </div>
+                            }
+
+                    }
+                        
+
+                    </div>
+                </div>
+
+            </div>
+
+        }
+
+    </div>
+
+    <a href="#" class="mobile-all">see all</a>
+</section>

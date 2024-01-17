@@ -1,0 +1,144 @@
+﻿@model Centers
+
+@{
+    ViewData["Title"] = "Centers / Center Add";
+
+}
+
+@section addcss{
+    <style>
+        label {
+            border-color: transparent !important;
+            color: black !important;
+            background-color: transparent !important;
+        }
+    </style>
+ }
+
+<div class="container p-5">
+    <h2 class="text-dark">Update Center</h2>
+
+
+    <div class="form-group">
+        <form method="post" asp-action="Update" enctype="multipart/form-data">
+            @if (!string.IsNullOrWhiteSpace(ViewBag.Err))
+            {
+                <div class="col-md-12 form-control bg-transparent border-0">@ViewBag.Err</div>
+            }
+            @if (!string.IsNullOrWhiteSpace(ViewBag.imgPath))
+            {
+                <div class="col-md-12 form-control bg-transparent border-0">@ViewBag.imgPath</div>
+            }
+            <div class="col-md-12 form-control bg-transparent border-0" asp-validation-summary="All"></div>
+            <div class="form-group">
+                <label class="form-control">Country</label>
+                <select required asp-for="CountryId" class="form-control text-dark" asp-items="ViewBag.Country">
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="form-control">Images</label>
+                <input type="file" multiple name="imagess" class="form-control text-dark" />
+            </div>
+
+
+            <div class="form-group">
+                <label class="form-control">Name</label>
+                <input required asp-for="Name" class="form-control text-dark" />
+                <input type="hidden" asp-for="Id" class="form-control text-dark" />
+                <input type="hidden" asp-for="CreatedDate" class="form-control text-dark" />
+             
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Name in Russian</label>
+                <input required asp-for="NameRUS" class="form-control text-dark" />
+
+                <span asp-validation-for="NameRUS" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Name in English</label>
+                <input required asp-for="NameENG" class="form-control text-dark" />
+
+                <span asp-validation-for="NameENG" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Price</label>
+                <input required asp-for="Price" class="form-control text-dark" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Description</label>
+                <input required asp-for="Description" class="form-control text-dark" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Description in Russian</label>
+                <input required asp-for="DescriptionRUS" class="form-control text-dark" />
+                <span asp-validation-for="DescriptionRUS" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Description in English</label>
+                <input required asp-for="DescriptionENG" class="form-control text-dark" />
+                <span asp-validation-for="DescriptionENG" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Note</label>
+                <input required asp-for="Note" class="form-control text-dark" />
+                <span asp-validation-for="Note" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Note in Russian</label>
+                <input required asp-for="NoteRUS" class="form-control text-dark" />
+                <span asp-validation-for="NameRUS" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Note in English</label>
+                <input required asp-for="NoteENG" class="form-control text-dark" />
+                <span asp-validation-for="NoteENG" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Activities</label>
+                <select required name="actvt" multiple class="form-control text-dark" asp-items="ViewBag.Activity">
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Packages</label>
+                <select required name="PackAges" multiple class="form-control text-dark" asp-items="ViewBag.Package">
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">City</label>
+                <select required name="city" multiple class="form-control text-dark" asp-items="ViewBag.City">
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="form-control">Region</label>
+                <select required name="region" multiple class="form-control text-dark" asp-items="ViewBag.Region">
+                </select>
+            </div>
+
+            <div class="d-flex my-5">
+                <input class="btn btn-primary" type="submit" value="Update" />
+                <a asp-action="index" class="btn btn-success">Back</a>
+            </div>
+
+
+
+        </form>
+
+    </div>
+
+</div>

@@ -1,0 +1,47 @@
+﻿@model IEnumerable<Activity>
+@{
+    int count = 0;
+    int countt = 0;
+}
+<section id="activities" class="categories mt-10">
+<div class="filter-categories">
+    <ul class="filter-categories-ul">
+
+            @foreach(var item in Model)
+            {
+                count++;
+                @if(count == 1)
+                {
+                    <li data-index="@item.Id" data-class="@item.Name" class="active">@item.Name</li>
+                }
+                else
+                {
+                    <li data-index="@item.Id" data-class="@item.Name">@item.Name</li>
+                }
+            }
+
+    </ul>
+
+
+</div>
+<div class="gym-images">
+        @foreach (var item in Model)
+        {
+            countt++;
+            @if (countt == 1)
+            {
+                <div class="image @item.Name active">
+                    <img src="~/assetss/img/@item.ImgPath" alt="">
+                </div>
+            }
+            else
+            {
+                <div class="image @item.Name">
+                    <img src="~/assetss/img/@item.ImgPath" alt="">
+                </div>
+            }
+        }
+
+
+</div>
+</section>

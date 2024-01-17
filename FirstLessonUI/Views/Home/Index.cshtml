@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@await Component.InvokeAsync("Banner")
+
+@await Component.InvokeAsync("Activities", new {db = ViewData["db"]})
+
+@await Component.InvokeAsync("Centers", new {db = ViewData["db"], lang = ViewBag.Language, con = ViewBag.Country})
+
+@await Component.InvokeAsync("Centers", new {db = ViewData["db"],  lang = ViewBag.Language, con = ViewBag.Country})
+
+@await Component.InvokeAsync("HowItWorks")
+
+
+@await Component.InvokeAsync("Pricing")
