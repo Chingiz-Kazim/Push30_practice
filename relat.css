@@ -1,0 +1,317 @@
+@media only screen and (max-width: 1000px)  {
+    *{
+        box-sizing: border-box !important;
+    }
+   .container{
+    padding-left: 2%;
+    padding-right: 2%;
+   }
+
+   header{
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+   }
+
+    header > div:nth-child(1){
+      width: 60%;
+      justify-content: space-between;
+    }
+    header > div:nth-child(2){
+        width: 40%;
+        justify-content: flex-end;
+      }
+
+
+      header > div:nth-child(2) select{
+        display: none;
+      }
+      header :nth-child(1) .logo-div{
+        order:2;
+      }
+      header :nth-child(1) nav{
+        order:1;
+      }
+
+      header :nth-child(1) nav ul{
+        display: none;
+      }
+      .burger{
+        display: flex;
+      }
+      .logo-div{
+        border: none;
+      }
+     
+      .calltoaction > h2{
+        font-size: 3.5rem;
+      }
+      .calltoaction > p{
+        font-size: 1.2rem;
+      }
+
+      .activity{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .activity > div{
+        width: 100%;
+      }
+
+      .activity div:nth-child(1){
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .activity div:nth-child(1) a{
+        font-size: 2rem;
+      }
+
+      .activity div:nth-child(2){
+        margin-top: 5%;
+      }
+
+      .seeall{
+        display: none;
+      }
+     .fit-centers h2{
+      width: 100%;
+      text-align: center;
+     }
+
+     .centers{
+        justify-content: space-between;
+     }
+
+     .centers .center{
+        width: 45%;
+        margin: 3% 0;
+     }
+
+     .center-package span{
+        font-size: 0.6rem;
+     }
+
+     .center .bg-img{
+        background-size: cover !important;
+     }
+
+     .disc-partners .calltoaction > h2{
+        font-size: 3rem;
+     }
+
+     .stepcondition .dcsrptn{
+        justify-content: space-between;
+     }
+
+     .stepcondition .dcsrptn p {
+        font-size: 0.5rem;
+     }
+
+     .part.d-flex.justify-between{
+        justify-content: center !important;
+     }
+
+     .pay div:nth-child(2){
+        flex-wrap: wrap;
+        justify-content: space-between;
+     }
+
+     .pay .pay-card{
+        width: 48%;
+     }
+     footer .calltoaction{
+        justify-content: center;
+     }
+     footer div:nth-child(2), footer div:nth-child(3){
+         flex-direction: column;
+         align-items: center;
+    }
+
+    footer div:nth-child(2) nav{
+        margin-top: 2%;
+    }
+
+    footer div:nth-child(3)>div:nth-child(2){
+        order: 1;
+    }
+    footer div:nth-child(3)>div:nth-child(1){
+        order: 2;
+        margin-top: 2%;
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    header > div:nth-child(2) {
+        display: none;
+      }
+      header>div:nth-child(1){
+        width: 100%;
+        justify-content: flex-start;
+      }
+      
+      .burger{
+        left: 95%;
+        top: 15px;
+      }
+
+
+      header :nth-child(1) .logo-div{
+        order:1;
+      }
+      header :nth-child(1) nav{
+        order:2;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: black;
+        height: 100vh;
+        transition: 0.7s;
+      }
+
+      header :nth-child(1) nav.active{
+        left: 0%;
+        transition: 0.7s;
+      }
+
+      header :nth-child(1) nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    header a.active::after, .num.active::after{
+        content: '';
+    }
+
+
+
+    .calltoaction > h2{
+      font-size: 3rem;
+    }
+    .calltoaction > p{
+      font-size: 1rem;
+    }
+    /* .calltoaction div:nth-child(2){
+      display: inline-block;
+      flex-direction: column;
+      justify-content: space-between;
+    } */
+    .activity{
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .activity > div{
+      width: 100%;
+    }
+
+    .activity div:nth-child(1){
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .activity div:nth-child(1) a{
+      font-size: 1.5rem;
+    }
+
+    .activity div:nth-child(2){
+      margin-top: 5%;
+    }
+
+    .seeall{
+      display: none;
+    }
+   .fit-centers h2{
+    width: 100%;
+    text-align: center;
+   }
+
+   .centers{
+      justify-content: space-between;
+   }
+   .bg-img{
+    height: 700px;
+   }
+   .centers .center{
+      width: 96%;
+      margin: 3%;
+   }
+
+   .center-package span{
+      font-size: 0.9rem;
+   }
+
+   .center .bg-img{
+      background-size: cover !important;
+   }
+
+   
+.block {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+   position: absolute;
+   top: 40%;
+   left: 3%;
+}
+
+   .disc-partners .calltoaction > h2{
+      font-size: 2rem;
+   }
+
+   .stepcondition .dcsrptn{
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+
+   .stepcondition .dcsrptn p {
+      font-size: 1rem;
+      
+   }
+ .part{
+  margin-bottom: 10%;
+ }
+   .part.d-flex.justify-between{
+      justify-content: center !important;
+   }
+
+   .pay div:nth-child(2){
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+
+   .pay .pay-card{
+      width: 98%;
+   }
+   footer .calltoaction{
+      justify-content: center;
+   }
+   footer div:nth-child(2), footer div:nth-child(3){
+       flex-direction: column;
+       align-items: center;
+  }
+
+  footer div:nth-child(2) nav{
+      margin-top: 1%;
+  }
+
+  footer div:nth-child(3)>div:nth-child(2){
+      order: 1;
+  }
+  footer div:nth-child(3)>div:nth-child(1){
+      order: 2;
+      margin-top: 2%;
+      width: 100%;
+      justify-content: space-between;
+  }
+
+}

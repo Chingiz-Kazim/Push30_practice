@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        width: 300px;
+        height: 300px;
+        border: solid 2px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: animated 1s ease-in infinite;
+        position: relative;
+    }
+    span{
+        height: 40px;
+        width: 40px;
+        border: solid 1px black;
+    }
+    .head{
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+    }
+    .telo{
+        position: absolute;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        top: 61px;
+        left: 110px;
+    }
+    .limbs{
+        position: absolute;
+        transform: rotate(45deg);
+        border-left: none;
+        border-top: none;
+        top: 30px;
+    left: 131px;
+    }
+    .nogi{
+        position: absolute;
+        transform: rotate(45deg);
+        border-right: none;
+        border-bottom: none;
+        top: 109px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="head">
+        </span>
+        <span class="limbs"></span>
+        <span class="telo"></span>
+        <span class="nogi"></span>
+    </div>
+</body>
+</html>

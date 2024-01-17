@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+        div{
+            width: 300px;
+            position: relative;
+        }
+        .search{
+            color: white;
+            width: 100%;
+            padding:5px 10px;
+            border-radius: 7px;
+            background-color: gray;
+        }
+        button{
+            border-radius: 50%;
+            position: absolute;
+           right: -10px;
+           top: 50%;
+           font-size: 8px;
+           transform: translateY(-50%);
+           border: none;
+           width: 15px;
+           height: 15px;
+           display: flex;
+           font-weight: bold;
+           justify-content: center;
+            align-items: center;
+        }
+        .lupa{
+            position: absolute;
+           left: 2px;
+           top: 50%;
+           transform: translateY(-50%);
+           border: none;
+           width: 25px;
+           height: 25px;
+           display: flex;
+           font-weight: bold;
+           justify-content: center;
+            align-items: center;
+        }
+        input::placeholder{
+            padding-left: 15px;
+            color:beige
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <i class="fa-solid fa-magnifying-glass lupa" style="color: wheat;"></i>
+        <input type="text" placeholder="Search" class="search">
+        <button><i class="fa-solid fa-xmark"></i></button>
+
+    </div>
+</body>
+</html>
